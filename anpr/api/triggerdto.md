@@ -1,0 +1,16 @@
+# TriggerContext
+- `vehicleCoords`: A `vector3` representing the vehicle's position.
+- `anprName`: `string` The display name of the ANPR that detected the vehicle (as specified in the [config](/anpr/config.md?id=anpr-sensor-configuration)).
+- `wasJammed`: `boolean` Whether the ANPR was jammed (most of the time it's `false`, `true` values are only possible if the `autoJammers` config field is set to `false`).
+- `distance`: `number` The distance between the vehicle and the ANPR by the time of the detection.
+- `anprData`: `ANPRConfig` The [config](/anpr/config.md?id=anpr-sensor-configuration) specified to the current ANPR.
+- `playerSrc`: `number` The server id of the player who was driving the vehicle.
+- `vehicleId`: `number` The server entity id of the vehicle.
+- `timestamp`: `number` The unix timestamp of the detection.
+- `isoDate`: ISO ([ISO 8601](https://en.wikipedia.org/wiki/ISO_8601)) formatted `string`.
+- `playerIdentifier`: `string` The FiveM identifier of the player who was driving the vehicle.
+- `jammerData`: `JammerDecl` or `nil` A jammer data (only present when `wasJammed`is `true`).
+- `reportData`: `Report` The actual report, as seen in the [Report](anpr/api/reportdto.md) interface.
+- `detectionId`: `string` A [UUID V4](https://www.intl-spectrum.com/Article/r848/IS_UUID_V4_UUID_V4_Random_Generation) unique to this detection.
+- `vehicleDispName`: `string` The display name of the vehicle (e.g: `Adder`)
+- `licensePlate`: `string` The license plate of the vehicle

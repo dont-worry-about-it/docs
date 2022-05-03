@@ -1,0 +1,11 @@
+# Report
+- `dateTimestamp`: `number` (unix timestamp).
+- `isoDate`: ISO ([ISO 8601](https://en.wikipedia.org/wiki/ISO_8601)) formatted `string`. 
+- `reason`: `string` or `nil` If nothing was provided.
+- `license_plate`: `string` or `nil` This is the most effective way of detecting vehicles since there is no chance for false-positives.
+- `ownerPlayer`: `string` or `nil` The FiveM identifier of the player that is being targeted (not used in the detection phase, just optionally there for internal use).
+- `colorRange`: `{number, number}` or `nil` The first element of the array represents the starting, the second represents the ending primary color code (e.g: `{10, 20}` represents an inclusive range of `10,11,12..20`).
+- `secondaryColorRange`: `{number, number}` or `nil` The first element of the array represents the starting, the second represents the ending secondary color code (e.g: `{10, 20}` represents an inclusive range of `10,11,12..20`)
+- `model`: `string` or `nil` Represents the display name of the vehicle (e.g: `Adder`).
+- `reportId`: `string` A [UUID V4](https://www.intl-spectrum.com/Article/r848/IS_UUID_V4_UUID_V4_Random_Generation) unique to this report.
+- `active`: `true`  Whether the report is active or not. A report will not be active when it was *successfully* detected by an ANPR or manually removed.
