@@ -1,24 +1,4 @@
-# ANPR
-
-## Features
-- License plate based detection
-- Vehicle detail based detection (color ranges, model etc)
-- Lifecycle hooks (report creation, detection) with the ability to manipulate results
-- Multiple use cases (police, door openers, access control, etc)
-- 0.0ms client usage
-- 0.06ms server usage
-- Entirely server sided
-- Rich configuration
-- Jamming (both automatic and API based)
-- Framework-agnostic
-- No external database required
-- Migratable database
-- Admin commands
-- Relational database level querying made possible by LevelDB (FiveM's built in KV store)
-- Extensive developer API (lua/js/ts)
-- Type definitions
-- Partially open source
-- Automatic update notifications, once you buy the resource you will be granted access to every update for free
+# ANPR API
 
 ## API usage
 - Our ANPR resource exposes a mostly export driven lua API, but using js/ts is possible for more advanced users.
