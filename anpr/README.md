@@ -9,7 +9,7 @@
 - Lifecycle hooks (report creation, detection) with the ability to manipulate results
 - Multiple use cases (police, door openers, access control, etc)
 - 0.0ms client usage
-- 0.06ms server usage
+- 0.06ms server usage (depending on configuration)
 - Entirely server sided
 - Rich configuration
 - Jamming (both automatic and API based)

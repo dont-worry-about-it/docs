@@ -17,3 +17,4 @@
 
 ## Caveats
 - When passing a function to an export (mainly for exports starting with `on`)  try to minimize calls to thread yielding functions (`Citizen.Wait`, `Wait` and `CreateThread`). From our experiments, `Citizen.Await` always works, but we are actively investigating for ways to solve this.
+- The above problem can be solved by calling an event from the handler since this will switch context to a different thread.

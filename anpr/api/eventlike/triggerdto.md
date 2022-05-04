@@ -10,7 +10,7 @@
 - `isoDate`: ISO ([ISO 8601](https://en.wikipedia.org/wiki/ISO_8601)) formatted `string`.
 - `playerIdentifier`: `string` The FiveM identifier of the player who was driving the vehicle.
 - `jammerData`: `JammerDecl` or `nil` A jammer data (only present when `wasJammed`is `true`).
-- `reportData`: `Report` The actual report, as seen in the [Report](anpr/api/reportdto.md) interface.
+- `reportData`: `Report` The actual report, as seen in the [Report](anpr/api/eventlike/reportdto.md) interface.
 - `detectionId`: `string` A [UUID V4](https://www.intl-spectrum.com/Article/r848/IS_UUID_V4_UUID_V4_Random_Generation) unique to this detection.
 - `vehicleDispName`: `string` The display name of the vehicle (e.g: `Adder`)
 - `licensePlate`: `string` The license plate of the vehicle
